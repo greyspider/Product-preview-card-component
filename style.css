@@ -1,0 +1,108 @@
+:root{
+    --Very_dark_blue : hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%)
+}
+body {
+    background-color: var(--Cream);
+    position: relative;
+    font-family: 'Montserrat';
+}
+.all {
+    background-color: white;
+    width: 50%;
+ 
+    /* height: 30%; */
+    margin:100px auto;
+    padding-left: 0%;
+    border-radius: 3%;
+}
+.text {
+    padding: 4%;
+}
+.perfume {
+    opacity: 50%;
+    font-size: smaller;
+}
+.title {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: var(--Very_dark_blue);
+    
+}
+.par {
+    font-size: 1rem;
+    opacity: 70%;
+    color: var(--Dark_grayish_blue);
+    font-weight: 300;
+    margin: 1.5rem 0;
+}
+.mobimg {
+    display: none;
+}
+.img{
+    background-image:url('images/image-product-desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3% 0 0 3%;    
+}
+@media (max-width:375px) {
+    .img {
+        background-image:none;
+        
+    }
+    .all {
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        width: auto;
+        height: 100%;
+        padding: 0%;
+    }
+    .text{
+        padding: 10%;
+    }
+    .par{
+        margin: 0%;
+    }
+    .btn{
+        align-self: center;
+    }
+    .mobimg {
+        display: inline-flex;
+        width:max-content;
+        border-radius: 5% 5% 0 0;
+    }
+    .price {
+        margin: 5% 0;
+    }
+}
+.price {
+    display: inline;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2rem;
+    color: var(--Dark_cyan);
+    /* margin-right: 7%; */
+}
+.pastprice {
+    display: inline;
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 40%;
+    align-self: center;
+    text-decoration: line-through;
+}
+.btn {
+    display: block;
+    background-color: var(--Dark_cyan);
+    color: white;
+    padding: 5% 30%;
+    font-weight: bold;
+    font-size: smaller;
+}
+.btn:hover {
+    background-color: var(--Dark_grayish_blue);
+    border: none;
+}
