@@ -43,7 +43,7 @@ body {
     display: none;
 }
 .img{
-    background-image:url('image-product-desktop.jpg');
+    background-image:url("https://i.ibb.co/RbwQqp2/image-product-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 3% 0 0 3%;    
@@ -62,7 +62,7 @@ body {
         padding: 0%;
     }
     .text{
-        padding: 2% 10% 2% 10%;
+        padding: 4% 10% 5% 10%;
     }
     .par{
         margin: 0%;
